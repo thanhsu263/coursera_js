@@ -55,15 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
     closeBtn.addEventListener('click', closeLightbox);
     prevBtn.addEventListener('click', showPrev);
     nextBtn.addEventListener('click', showNext);
-
-    // Close on background click
     lightbox.addEventListener('click', function(e) {
         if (e.target === lightbox) {
             closeLightbox();
         }
     });
-
-    
     document.addEventListener('keydown', function(e) {
         if (lightbox.style.display === 'flex') {
             if (e.key === 'Escape') closeLightbox();
@@ -71,8 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (e.key === 'ArrowRight') showNext();
         }
     });
-
-    
     const style = document.createElement('style');
     style.textContent = `
         .lightbox {
@@ -152,11 +146,6 @@ document.addEventListener('DOMContentLoaded', function() {
             text-align: center;
             padding: 10px;
             font-size: 16px;
-        }
-
-        
-        img {
-            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         img:hover {
