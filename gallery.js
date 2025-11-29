@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Keyboard navigation
+    
     document.addEventListener('keydown', function(e) {
         if (lightbox.style.display === 'flex') {
             if (e.key === 'Escape') closeLightbox();
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
             font-size: 16px;
         }
 
-        /* Add hover effect to gallery images */
+        
         img {
             transition: transform 0.3s, box-shadow 0.3s;
         }
