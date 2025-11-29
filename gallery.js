@@ -139,13 +139,18 @@ document.addEventListener('DOMContentLoaded', function() {
             padding: 15px;
             font-size: 18px;
             margin-top: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
         }
 
         .counter {
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 10px 20px;
             font-size: 16px;
+            background-color: rgba(255, 102, 0, 0.8);
+            border-radius: 20px;
+            font-weight: bold;
         }
 
         img:hover {
