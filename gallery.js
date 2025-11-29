@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Add CSS for lightbox
+    
     const style = document.createElement('style');
     style.textContent = `
         .lightbox {
